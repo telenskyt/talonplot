@@ -1,0 +1,12 @@
+Package: talonplot
+Type: Package
+Title: A plot of contributions of survival and recruitment to population growth
+Version: 0.1.0
+Author: Tomáš Telenský <tomas.telensky@gmail.com>
+Maintainer: Tomáš Telenský <tomas.telensky@gmail.com>
+Description: Makes a so called "talon plot", a plot showing contributions of adult survival and recruitment to population growth. It is a 2D plot with three axes, population growth being a sum of adult survival and recruitment. It can reveal important patterns in population dynamics, see Telenský et al. (2023). References: Telenský, T., Storch, D., Klvaňa, P., Reif, J. Extension of Pradel capture-recapture survival-recruitment model accounting for transients. Methods in Ecology and Evolution.
+License: GPL (>=3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: car, gridGraphics
