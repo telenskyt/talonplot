@@ -49,13 +49,13 @@ talon_plot <- function (recr_pts, surv_pts, recr_samples = NULL, surv_samples = 
 {
 	CI_type <- match.arg(CI_type)
 	if (lim_include_zero_one) {
-		if (CI_type == "") {
+		if (CI_type == "none") {
 			xylim <- c(0, 1.05*max(1, recr_pts, surv_pts))
 		} else {
 			xylim <- c(0, 1.05*max(1, recr_CI_high, surv_CI_high))
 		}
 	} else {
-		if (CI_type == "") {
+		if (CI_type == "none") {
 			xylim <- expand_range(range(recr_pts, surv_pts), 0.05)
 		} else {
 			xylim <- expand_range(range(recr_CI_high, recr_CI_low, surv_CI_high, surv_CI_low), 0.05)
